@@ -978,8 +978,8 @@
 			<integer>41835</integer>
 			<key>Points</key>
 			<array>
-				<string>{242.77597332000732, 256.83978271484375}</string>
-				<string>{242.77597332000732, 325.23297119140625}</string>
+				<string>{240.77597332000732, 256.83978271484375}</string>
+				<string>{240.77597332000732, 325.23297119140625}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1011,8 +1011,8 @@
 			<integer>41834</integer>
 			<key>Points</key>
 			<array>
-				<string>{242.77597597329554, 151.94659423828125}</string>
-				<string>{242.77597597329554, 219.83978271484375}</string>
+				<string>{240.77597597329554, 151.94659423828125}</string>
+				<string>{240.77597597329554, 219.83978271484375}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1034,7 +1034,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{185.27597045898438, 220.33978271484375}, {115.00000143051147, 36}}</string>
+			<string>{{183.27597045898438, 220.33978271484375}, {115.00000143051147, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1067,7 +1067,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{185.27597045898438, 115.44659423828125}, {115.00000143051147, 36}}</string>
+			<string>{{183.27597045898438, 115.44659423828125}, {115.00000143051147, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1100,7 +1100,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{185.27597332000732, 325.23297119140625}, {115, 36}}</string>
+			<string>{{183.27597332000732, 325.23297119140625}, {115, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FontInfo</key>
@@ -1637,7 +1637,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2015-12-15 18:01:10 +0000</string>
+	<string>2016-01-15 20:58:17 +0000</string>
 	<key>Modifier</key>
 	<string>Eberhard Wolff</string>
 	<key>NotesVisible</key>
