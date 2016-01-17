@@ -48,7 +48,8 @@ technologies enabling the use of Microservices.
 ##4.4 More literature {#section4-4}
 
 Additional literature such as the
-[Microservices Book](http://microservices-book.com) by the same author
+[Microservices Book](http://microservices-book.com) (there is also a
+[German version](http://microservices-buch.de)) by the same author
 will be needed to appreciate the full scope of Microservices and to
 learn how to actually implement them technically.
 
