@@ -6,5 +6,5 @@
 {id="Fig2"}
 ![Fig. 2: Team setup by technical skills](images/02-ConwaysLawLimitation.png)
 
-{id="Fig2"}
-![Fig. 2: Team setup by functionalities](images/03-ConwaysLawEnabler.png)
+{id="Fig3"}
+![Fig. 3: Team setup by functionalities](images/03-ConwaysLawEnabler.png)
