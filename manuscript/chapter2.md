@@ -481,12 +481,14 @@ Microservice.
 
 ##2.4 Conclusion {#section2-4}
 
-The discussion about the size of Microservices focuses rather on
-the technical structure of the system for defining Microservices. 
-For the distribution according
-to *Bounded Context* the domain architecture is the most important
-aspect. Conway's Law states that Microservices also have effects on
-the organization. Only together these aspects give a faithful picture
-of Microservices. Which of these aspects is the most important depends
-on the use context of the Microservice-based architectures.
+The discussion in [section 2.1](#section2-1) about the size of
+Microservices focuses rather on the technical structure of the system
+for defining Microservices.  For the distribution according to
+*Bounded Context* ([section 2.2](#section2-2)) the domain architecture
+is the most important aspect. Conway's Law
+([section 2.3](#section2-3)) states that Microservices also have
+effects on the organization. Only together these aspects give a
+faithful picture of Microservices. Which of these aspects is the most
+important depends on the use context of the Microservice-based
+architectures.
 
