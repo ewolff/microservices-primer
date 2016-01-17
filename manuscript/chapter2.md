@@ -12,25 +12,25 @@ ideas:
 these are text streams.
 
 The realization of these ideas leads to the creation of reusable
-programs, which are in the end a kind of components.
+programs, which are in the end a kind of component.
 
 Microservices serve to divide large systems. Consequently,
 Microservices represent a modularization concept. There is a large
 number of such concepts, but Microservices are different. They can be
 brought into production independently of each other. Changes to an
-individual Microservice only mean that this Microservices has to be
+individual Microservice only require that this Microservices has to be
 brought into production. In the case of other modularization concepts
 all modules have to be delivered together. Thus, a modification to an
 individual module necessitates that the entire application with all
 its modules has to be deployed again.
 
-####Microservice = virtual machine
+####Microservice = Virtual Machine
 
-Microservices cannot be implemented with the modularization concepts
-of the programming languages. These concepts usually require
+Microservices cannot be implemented via the modularization concepts
+of programming languages. These concepts usually require
 that all modules have to be delivered together in one program. Instead
 Microservices have to be implemented as virtual machines, as more
-light-weight alternatives like Docker containers or as individual
+light-weight alternatives such as Docker containers or as individual
 processes. Thereby they can all easily be brought into production
 individually.
 
@@ -40,15 +40,15 @@ implemented in any programming language or on any platform. Moreover,
 Microservices can of course also bring along their own supporting
 services such as databases or other infrastructure.
 
-Besides, Microservice should have separate data storage i.e. a
+Besides, Microservices should possess their own separate data storage i.e. a
 separate database or at least a separate schema in a common
 database. Consequently, each Microservice is in charge of its own
 data. In fact, experience teaches that the shared use of database
 schemas renders changes to the data structures practically
 impossible. Since this interferes profoundly with software
-changeability, this kind of coupling should be excluded.
+changeability, this kind of coupling should be prevented.
 
-####Communication between Microservices
+####Communication Between Microservices
 
 Microservices have to be able to communicate with each other. This can
 be achieved in different manners:
@@ -63,21 +63,21 @@ be achieved in different manners:
   writing are rather equal. Classical data warehouses also employ
   replication for analyzing large amounts of data.
   
-* When Microservices possess an HTML-UI, they can easily use links to
+* When Microservices possess an HTML UI, they can easily use links to
   other Microservices. Besides, it is possible that a Microservice
   integrates the HTML code of other Microservices in its own web page.
   
 * Finally, the Microservices can communicate with each other by
-protocols like REST or Messaging via the network.
+protocols like REST or messaging via the network.
 
-In a Microservice system it has to be defined which communication
+In a Microservice-based system it has to be defined which communication
 variants are used to ensure that the Microservices can in fact be
 reached with these technologies.
 
 ##2.1 Size {#section2-1}
 
 The term "Microservice" focuses on the size of Microservices. This
-makes sense for distinguishing Microservices from other definition of
+makes sense for distinguishing Microservices from other definitions of
 "services". Nevertheless, it is not so easy to indicate the concrete
 size of Microservices.
 
@@ -127,23 +127,23 @@ also a number of problems:
   
 * It is difficult to move code across Microservice boundaries. The
   code has to be transferred into another system. When this system
-  uses a different technology or programming language, a rewriting the
+  uses a different technology or programming language, rewriting the
   code in a different language might be the only option for moving a
   functionality from one Microservice into another. Of course, it is
   always possible to turn the respective functionalities into a new
-  Microservice which can be accessed by the other Microservices. In
-  contrast within a Microservice refactoring is quite easy with the
+  Microservice, which can be accessed by the other Microservices. In
+  contrast, within a Microservice refactoring is quite easy with the
   aid of the usual mechanisms e.g. automated refactoring in the IDE.
   
 * A transaction within a Microservice is easy to implement. Beyond the
-  boundaries of an individual Microservice this is not trivial 
+  boundaries of an individual Microservice this is not trivial anymore
   since distributed transactions become necessary. Therefore the best
   is to decide for a Microservice size which allows that a transaction
   can be entirely processed in one Microservice.
   
 * The same holds true for the consistency of data: When for instance
   the account balance is supposed to be consistent with the result of
-  earnings and expenses, this can be relatively easily be implemented
+  earnings and expenses, this can quite easily be implemented
   in one Microservice, but is hardly feasible across
   Microservices. Therefore, Microservices should be large enough to
   ensure that data which have to be consistent are handled in the same
@@ -158,7 +158,7 @@ also a number of problems:
 To a certain degree the size of a Microservice depends on the
 infrastructure: When the infrastructure is very simple, it can
 support a multitude of Microservices and therefore also very small
-Microservices. In such a case the advantages of a Microservice
+Microservices are possible. In such a case the advantages of a Microservice-based
 architecture are accordingly larger. Already relatively simple
 measures can help to reduce the infrastructure expenditure: When there
 are templates for Microservices or other possibilities to create
@@ -169,36 +169,36 @@ Microservices.
 ####Nanoservices
 
 Certain technological approaches can further reduce the size of a
-service. Instead of delivering a Microservices as virtual machine or
+service. Instead of delivering Microservice as virtual machines or
 Docker containers, the services can be deployed on
 [Amazon Lambda](https://aws.amazon.com/lambda/). It allows the
 deployment of individual functions written in Java, Node.js or
-Python. Each function is automatically monitored. Also each call to a
-function is billed. Function can be called using REST or because of
+Python. Each function is automatically monitored. In addition, each call to a
+function is billed. Functions can be called using REST or due to 
 events e.g. data written to Amazon S3 or DynamoDB. Using such an
 infrastructure makes it possible to create services that just consist
-of a few lines of code each because the overhead for deployment and
+of a few Lines of Code each because the overhead for deployment and
 operations is so low.
 
 
-A similar approach can be implemented using Java EE application
+A similar approach can be implemented using a Java EE application
 server. Java EE defines different deployment formats and allows to run
-multiple applications on an application server. The services would
+multiple applications on an application server. The services
 communicate for instance via REST or messaging just like
 Microservices. However, in such a scenario the services are not so
-well isolated anymore from each other: When an application in an
+well isolated from each other anymore: When an application in an
 application server uses up a lot of memory, this will also affect the
-other application on the application server.
+other applications on the application server.
 
 Another alternative are OSGi bundles. This approach also defines a
 module system based on Java. However, in contrast to Java EE this
-approach allows method calls between bundles so that a communication
+approach allows method calls between bundles so that communication
 via REST or messaging is not necessarily required.
 
 Unfortunately, both approaches are problematic when it comes to
 independent deployment: In practice, Java EE application servers and
-also OSGi runtime environments have often to be started again upon the
-deployment of new modules. Therefore, a deployment affects also other
+also OSGi runtime environments have often to be started again when
+new modules are deployed. Therefore, a deployment affects also other
 modules.
 
 On the other hand, the expenditure for infrastructure and
@@ -206,9 +206,9 @@ communication is lower since OSGi allows for instance to use local
 method calls. This enables the use of smaller services.
 
 To clearly distinguish these services from Microservices it is
-sensible to use an alternative term for them like "Nanoservices" for
+sensible to use an alternative term like "Nanoservices" for
 this approach. Ultimately these services offer neither the isolation
-of Microservices nor their independent deployment
+of Microservices nor their independent deployment.
 
 ##2.2 Bounded Context and Domain-Driven Design {#section2-2}
 
@@ -227,7 +227,7 @@ are relevant for the order process.
 
 Here, Domain-driven Design ((DDD)[^DDD]) is helpful. Domain-driven
 Design serves to analyze a domain. The essential basis is *Ubiquitous
-Language*. This is like other components of Domain Driven Design also a
+Language*. This is like other components of Domain-driven Design also a
 pattern and therefore here set in *italics*. *Ubiquitous Language*
 denotes the concept that everybody who participates in the software
 should use the same terms. Technical terms like order, bill
@@ -240,7 +240,7 @@ implemented in the software.
 The domain model can consist of different elements:
 
 * *Entity* is an object with its own identity. In an
-  E-commerce-application the customer or the item could be
+  E-commerce application the customer or the item could be
   *Entities*. *Entities* are typically stored in a database.
   
 * *Value Objects* do not have their own identity. An example is an
@@ -258,7 +258,7 @@ The domain model can consist of different elements:
 * *Services* contain business logic. DDD focuses on the modeling of
   business logic as *Entities*, *Value Objects* and *Aggregates*. However,
   logic which accesses multiple of these objects cannot be modelled
-  in one of there objects. For this purpose there are *Services*.
+  in one of these objects. For this purpose there are *Services*.
   
 * *Repositories* serve to access the entirety of all *Entities* of a
   type. Typically, some kind of persistence, for example in a database, is what
@@ -274,7 +274,7 @@ relevance DDD might have for Microservices.
 Domain-driven Design does not only provide a guideline for how a
 domain model can be implemented, but also for the relationships
 between domain models. Having multiple domain models initially appears
-unusual. After all concepts like customer and order are central for
+unusual. After all, concepts like customer and order are central for
 the entire enterprise. Therefore, it seems attractive to implement
 exactly one domain model and to carefully consider all aspects of the
 model. This should make it easy to implement the software systems in
@@ -282,11 +282,11 @@ the enterprise based on these elements.
 
 However, *Bounded Context* states that such a general model cannot be
 implemented. Let's take the customer of the E-commerce shop as an
-example: The delivery address of this customers is relevant in the
-context of the delivery process. During the order process on the
-other hand the specific preferences of the customer matter, and for
-billing the options for paying for which the customer has deposited
-data are most important – for example his/her credit card number or
+example: The delivery address of this customer is relevant in the
+context of the delivery process. During the order process, on the
+other hand, the specific preferences of the customer matter, and for
+billing the options for paying, for which the customer has deposited
+data, are most important – for example his/her credit card number or
 information for a direct debit.
 
 Theoretically it might be possible to collect all this information
@@ -392,7 +392,7 @@ This architecture entails a number of disadvantages:
   teams. He/she has to explain the requirements for the new feature to
   each of the three teams. When the customer does not have detailed
   knowledge about the system architecture, the teams will have to
-  discuss with him how the functionalities can be implemented in the
+  discuss with him/her how the functionalities can be implemented in the
   different layers.
   
 * The teams have to coordinate their work for instance in regards to
@@ -407,9 +407,9 @@ interfaces.
   the implementation of the feature. The database team can only
   deliver the changes at the end of its sprint. As the work of the
   backend team is based on the changes introduced by the database
-  team, it has to wait till the other team is done. Likewise, the UI
+  team, it has to wait until the other team is done. Likewise, the UI
   team has to wait for the backend team to finish. Therefore, it might
-  take three sprints till the entire implementation is completed. Of
+  take three sprints until the entire implementation is completed. Of
   course, optimizations are possible. However, a completely parallel
   implementation is practically impossible.
   
@@ -460,11 +460,11 @@ but require changes to multiple Microservices. Besides, sometimes more
 changes have to be introduced into a Microservice than one team can
 handle. In practice, it has proven best to have one team in charge of
 a Microservice, but to allow also other teams to modify the
-Microservices. When a feature requires changes to multiple
+Microservice. When a feature requires changes to multiple
 Microservices, one team can introduce all these changes without having
-to let changes be prioritized by another team. Besides multiple teams
+to let changes be prioritized by another team. Besides, multiple teams
 can work on one Microservice in order to implement a greater number of
-features. Nevertheless the team assigned to the Microservice is still
+features. Nevertheless, the team assigned to the Microservice is still
 in charge. In particular, it has to review all modifications to
 guide its development.
 
@@ -481,9 +481,10 @@ Microservice.
 
 ##2.4 Conclusion {#section2-4}
 
-The size of Microservices focuses for defining Microservices rather on
-the technical structure of the system. For the distribution according
-to *Bounded Context* the domain architecture is in the most important
+The discussion about the size of Microservices focuses rather on
+the technical structure of the system for defining Microservices. 
+For the distribution according
+to *Bounded Context* the domain architecture is the most important
 aspect. Conway's Law states that Microservices also have effects on
 the organization. Only together these aspects give a faithful picture
 of Microservices. Which of these aspects is the most important depends
