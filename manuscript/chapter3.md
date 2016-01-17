@@ -265,17 +265,24 @@ motivation.
 Microservices have a large number of advantages. Which advantages are
 in the end the most important, depends on the concrete context. For
 many projects the focus is on the replacement of a deployment
-monolith. In such a case the easy handling of the legacy system is an
-important advantage during migration. Reasons to migrate are in such
-cases often the wish to scale agile processes or for an easier
-implementation of Continuous Delivery.
+monolith. In such a case the easy handling of the legacy system (see
+[section 3.2](#section3-2)) is an important advantage during
+migration. Reasons to migrate are in such cases often the wish to
+scale agile processes ([section 3.1](#section3-1)) or for an easier
+implementation of Continuous Delivery ([section 3.5](#section3-5)).
 
 However, there are also very different scenarios where for instance
 the objective is to increase the stability of an application in
-operation. In this case robustness is an important motivation, and
-independent scaling can be another important factor.
+operation. In this case robustness ([section 3.4](#section3-4)) is an
+important motivation, and independent scaling
+([section 3.6](#section3-6)) can be another important factor.
 
-Therefore, the relevant advantages depend on the respective use
+Last but not least Microservices promises to make systems maintainable
+even in the long run ([section 3.3](#section3-3)) and can use many
+different technologies where they are most useful
+([section 3.7](#section3-7)).
+
+Therefore, the relevant advantages depend on the respective
 context. How Microservices should be used in the context of a certain
 system, likewise depends on the specific advantages which are supposed
 to be realized.
