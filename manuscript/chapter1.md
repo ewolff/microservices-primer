@@ -1,8 +1,8 @@
 #1 Introduction {#chapter-1}
 
-Microservices have turned into a hype. Like every architecture
-approach Microservices have a certain scenarios where their
-advantages can best unfold. Besides, their characteristic advantages
+Microservices have turned into a hype. Like for every other architecture
+approach there are certain scenarios where the advantages of Microservices
+can best unfold. Besides, their characteristic advantages
 come at the price of challenges in other areas.
 
 This primer provides a short introduction into the topic of
