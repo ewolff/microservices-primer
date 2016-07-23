@@ -101,8 +101,10 @@ and in contrast to deployment monoliths the architecture cannot easily
 get lost. Of course, similar results can also be accomplished by other
 measures enforcing architecture integrity. There are for instance
 architecture tools which alert developers to their transgression of
-architecture rules. However, in the case of Microservices such
-measures are already integrated into the system.
+architecture rules e.g. [Structure101](http://structure101.com/) or
+[Sonargraph](https://www.hello2morrow.com/products/sonargraph). However,
+in the case of Microservices such measures are already integrated into
+the system.
 
 ####Replaceability
 
