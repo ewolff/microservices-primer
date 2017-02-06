@@ -158,7 +158,7 @@ for this is the strict separation in processes or virtual machines.
 
 ##3.5 Continuous Delivery {#section3-5}
 
-Continuous Delivery is an approach where software is regularly
+[Continuous Delivery](http://continuous-delivery-book.com) is an approach where software is regularly
 brought into production. The basis for this is mainly a largely
 automated process as illustrated in [Fig. 4](#Fig4):
 
