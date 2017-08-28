@@ -38,15 +38,75 @@ Self-contained Systems represent
 a more specific approach to Microservices, which is custom-tailored to solve problems
 of large projects.
 
-##4.3 An Example {#section4-3}
+##4.3 Examples {#section4-3}
 
 The primer discusses Microservices only theoretically and does not
-introduce technologies for implementation. On
-[Github](https://github.com/ewolff/microservice) an example can be
-found which uses Java, Spring Boot, Spring Cloud and the Netflix stack
-to run a Microservice-based architecture in a Docker environment. It
-is worthwhile to have a look into this example to get an idea of the
-technologies enabling the use of Microservices.
+introduce technologies for implementation.
+
+http://ewolff.com/microservices-demos.html shows several examples for
+the different options to implement microservices:
+
+#### Synchronous Communication
+
+There are several options for synchronous communication between microservices:
+
+* The [Consul demo](https://github.com/ewolff/microservice-consul) is written
+  in Java with Spring Cloud / Boot. The demo uses Consul for service discovery,
+  Apache httpd for routing, Hystrix for resilience and Ribbon for load
+  balancing. It also provides a
+  [Prometheus installation](https://github.com/ewolff/microservice-consul#prometheus)
+  for monitoring 
+  and an
+  [ELK stack](https://github.com/ewolff/microservice-consul#elastic-stack)
+  for log analysis.
+
+* The [Netflix demo](https://github.com/ewolff/microservice) uses the
+  Netflix stack. The demo is written
+  in Java with Spring Cloud / Boot. It uses Netflix Eureka for service discovery,
+  Netflix Zuul for routing, Hystrix for resilience and Ribbon for load
+  balancing.
+
+* Kubernetes is a system to run Docker containers in a cluster. The
+  [Kubernetes demo](https://github.com/ewolff/microservice-kubernetes)
+  is written in Java with Spring Cloud / Boot. It uses Kubernetes for
+  service discovery, routing and load balancing.  The demo also uses
+  Hystrix for resilience. The code does not depend on Kubernetes.
+
+* Cloud Foundry is a PaaS. It provides an application with an
+  environment to run in. The
+  [Cloud Foundry demo](https://github.com/ewolff/microservice-cloudfoundry)
+  is written in Java with Spring Cloud / Boot. Uses Cloud Foundry for
+  deployment, service discovery, routing and load balancing.  The demo
+  also uses Hystrix for resilience. The code does not depend on Cloud
+  Foundry.
+
+#### Asynchronous Communication
+
+Asynchronous communication makes it easier to deal with unreliable
+networks and services:
+
+* [Kafka](https://github.com/ewolff/microservice-kafka) uses Kafka for
+communication. Kafka is a message-oriented middleware and allows
+systems to send messages to one another.
+
+* [Atom](https://github.com/ewolff/microservice-atom) uses REST / HTTP
+  for asynchronous communication with the Atom format.
+
+#### UI Integration
+
+UI integration provides very loose coupling:
+
+* [ESI](https://github.com/ewolff/SCS-ESI) shows how Edge Side
+Includes (ESI) can be used to integrate the UI of microservices. On
+microservice is written in Java with Spring Boot, the other one with
+Go. The Go microservices is built using multi stage Docker containers.
+
+* [jQuery](https://github.com/ewolff/SCS-jQuery) shows how jQuery can
+  be used to integrate the UI of microservices.
+
+The website for each demo explains how the demo can be built and
+started.
+
 
 ##4.4 More literature {#section4-4}
 
