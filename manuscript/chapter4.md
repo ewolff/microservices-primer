@@ -110,25 +110,29 @@ started.
 
 ## 4.4 More literature {#section4-4}
 
+Additional literature such as the
+[Microservices Book](http://microservices-book.com) (there is also a
+[German version](http://microservices-buch.de)) by the same author
+will be needed to appreciate the full scope of Microservices and to
+learn how to actually implement them technically.
+
 The free booklet
 [Microservices Recipes](http://practical-microservices.com/recipes.html)
 gives an overview of technologies that can be used to implement a
 microservices architecture. It explains the demos mentioned above in
 more detail and illustrates how the technology work and to provide a
 foundation for the implementation of a microservices architecture.
+There is also a
+[German version](http://microservices-praxisbuch.de/rezepte.html)).
 
 The book
-[Microservices - A Practical Guide](http://practical-microservices.com/)
+[Microservices - A Practical Guide](http://practical-microservices.com/) 
 contains a more detailed description of technologies for the
 implementation of microservices. In addition, it contains an
 introduction to microservices and an overview of technologies for the
-monitoring of microservices.
+monitoring of microservices. There is also a
+[German version](http://microservices-praxisbuch.de/)).
 
-Additional literature such as the
-[Microservices Book](http://microservices-book.com) (there is also a
-[German version](http://microservices-buch.de)) by the same author
-will be needed to appreciate the full scope of Microservices and to
-learn how to actually implement them technically.
 
 ## 4.5 Final Remark
 
