@@ -1,10 +1,10 @@
-#4 What's Next? {#chapter-4}
+# 4 What's Next? {#chapter-4}
 
 This primer can only provide a short introduction into
 Microservices. Therefore, it is an important question how to go on
 after reading this brochure.
 
-##4.1 Microservices: Just a Hype? {#section4-1}
+## 4.1 Microservices: Just a Hype? {#section4-1}
 
 Microservices are more than just a hype. Amazon employs the
 distribution into teams with their own technologies already
@@ -25,7 +25,7 @@ a solution for different problems. The trend to use Microservices is
 thus based on a number of reasons. Therefore it is extremely unlikely that
 it will just be a short-lived hype.
 
-##4.2 Self-contained Systems {#section4-2}
+## 4.2 Self-contained Systems {#section4-2}
 
 An approach based on Microservices are
 [Self-contained Systems](http://scs-architecture.org). They focus on
@@ -38,7 +38,7 @@ Self-contained Systems represent
 a more specific approach to Microservices, which is custom-tailored to solve problems
 of large projects.
 
-##4.3 Examples {#section4-3}
+## 4.3 Examples {#section4-3}
 
 The primer discusses Microservices only theoretically and does not
 introduce technologies for implementation.
@@ -108,7 +108,21 @@ The website for each demo explains how the demo can be built and
 started.
 
 
-##4.4 More literature {#section4-4}
+## 4.4 More literature {#section4-4}
+
+The free booklet
+[Microservices Recipes](http://practical-microservices.com/recipes.html)
+gives an overview of technologies that can be used to implement a
+microservices architecture. It explains the demos mentioned above in
+more detail and illustrates how the technology work and to provide a
+foundation for the implementation of a microservices architecture.
+
+The book
+[Microservices - A Practical Guide](http://practical-microservices.com/)
+contains a more detailed description of technologies for the
+implementation of microservices. In addition, it contains an
+introduction to microservices and an overview of technologies for the
+monitoring of microservices.
 
 Additional literature such as the
 [Microservices Book](http://microservices-book.com) (there is also a
@@ -116,12 +130,10 @@ Additional literature such as the
 will be needed to appreciate the full scope of Microservices and to
 learn how to actually implement them technically.
 
-However, the risk associated with introducing Microservices is very
+## 4.5 Final Remark
+
+A final remark: the risk associated with introducing Microservices is very
 limited: A first Microservice has just to be developed and brought
 into production. This Microservice can for instance supplement an
 existing deployment monolith. Should this approach not work out, it is
 very easy to remove the Microservice again.
-
-
-
-
