@@ -1,4 +1,4 @@
-#2 What Are Microservices? {#chapter-2}
+# 2 What Are Microservices? {#chapter-2}
 
 The idea behind Microservices is not new. A very similar approach
 is also followed by the UNIX philosophy, which is based on three
@@ -24,7 +24,7 @@ all modules have to be delivered together. Thus, a modification to an
 individual module necessitates that the entire application with all
 its modules has to be deployed again.
 
-####Microservice = Virtual Machine
+#### Microservice = Virtual Machine
 
 Microservices cannot be implemented via the modularization concepts
 of programming languages. These concepts usually require
@@ -48,7 +48,7 @@ schemas renders changes to the data structures practically
 impossible. Since this interferes profoundly with software
 changeability, this kind of coupling should be prevented.
 
-####Communication Between Microservices
+#### Communication Between Microservices
 
 Microservices have to be able to communicate with each other. This can
 be achieved in different manners:
@@ -74,7 +74,7 @@ In a Microservice-based system it has to be defined which communication
 variants are used to ensure that the Microservices can in fact be
 reached with these technologies.
 
-##2.1 Size {#section2-1}
+## 2.1 Size {#section2-1}
 
 The term "Microservice" focuses on the size of Microservices. This
 makes sense for distinguishing Microservices from other definitions of
@@ -166,7 +166,7 @@ Microservices easily and to more uniformly administrate them, this can
 already reduce expenditure and thereby enable the use of smaller
 Microservices.
 
-####Nanoservices
+#### Nanoservices
 
 Certain technological approaches can further reduce the size of a
 service. Instead of delivering Microservice as virtual machines or
@@ -210,7 +210,7 @@ sensible to use an alternative term like "Nanoservices" for
 this approach. Ultimately these services offer neither the isolation
 of Microservices nor their independent deployment.
 
-##2.2 Bounded Context and Domain-Driven Design {#section2-2}
+## 2.2 Bounded Context and Domain-Driven Design {#section2-2}
 
 It is one of the main objectives of Microservices to limit changes and
 new features to one Microservice. Such changes can comprise the UI –
@@ -269,7 +269,7 @@ the idea of *Ubiquitous Language* facilitate the design and development
 of object-oriented systems. However, it is not immediately clear which
 relevance DDD might have for Microservices.
 
-####Bounded Context
+#### Bounded Context
 
 Domain-driven Design does not only provide a guideline for how a
 domain model can be implemented, but also for the relationships
@@ -298,7 +298,7 @@ customer data model  – and these can be numerous. In addition, the
 analysis needed to arrive at such a customer model would be so complex
 that it would be hard to achieve in practice.
 
-####Bounded Context and Microservices
+#### Bounded Context and Microservices
 
 Therefore a domain model is only sensible in a certain context –
 i.e. in a *Bounded Context*. For Microservices it makes the most sense
@@ -327,7 +327,7 @@ to a separate Microservice, which administrates the data, are not
 necessary. Therefore, the *Bounded Context* is also an advantage in
 regards to changeability.
 
-####Relationships Between Bounded Contexts
+#### Relationships Between Bounded Contexts
 
 In his book Eric Evans describes different manners how *Bounded
 Contexts* can work together. In the case of *Shared Kernel* for
@@ -353,7 +353,7 @@ Kernel*. However, in such a case more coordination between
 Microservices might be necessary which can interfere with their
 separate development.
 
-##2.3	Conway's Law {#section2-3}
+## 2.3	Conway's Law {#section2-3}
 
 [Conway's Law](http://www.melconway.com/research/committees.html) was
 coined by the American computer scientist Melvin Edward Conway and
@@ -369,7 +369,7 @@ required regarding this interface – and therefore a communication
 relationship between the organizational units which are responsible
 for the respective parts.
 
-####The Law as a Limit for Architecture
+#### The Law as a Limit for Architecture
 
 An example for the effects of the Law: An organization forms one team
 of experts each for the web UI, the logic in the backend and for the
@@ -418,7 +418,7 @@ which interferes with a faster implementation of features. This
 problem is often not perceived, as the relationship between
 organization and architecture is frequently not considered.
 
-####Conway's Law as Enabler
+#### Conway's Law as Enabler
 
 However, it is also possible to deal very differently with Conway's
 Law. It is the explicit aim of Microservices to implement a domain
@@ -450,7 +450,7 @@ of experts is profoundly easier than across teams. For this reason,
 requirements which have to be implemented across different technical
 artifacts are now easier to implement.
 
-####Organizational Compromises
+#### Organizational Compromises
 
 In practice, even in a system structured as described with a
 supporting organization there are nevertheless still challenges to
@@ -468,7 +468,7 @@ features. Nevertheless, the team assigned to the Microservice is still
 in charge. In particular, it has to review all modifications to
 guide its development.
 
-####One Microservice per Team?
+#### One Microservice per Team?
 
 By the way, it is not really necessary that one team only implements
 one Microservice. A team can definitely also implement multiple
@@ -479,7 +479,7 @@ possible. It can definitely be desirable to implement smaller
 Microservices so that one team is in charge of more than one
 Microservice.
 
-##2.4 Conclusion {#section2-4}
+## 2.4 Conclusion {#section2-4}
 
 The discussion in [section 2.1](#section2-1) about the size of
 Microservices focuses rather on the technical structure of the system

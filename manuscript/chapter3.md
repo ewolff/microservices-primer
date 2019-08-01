@@ -1,4 +1,4 @@
-#3 Why Microservices? {#chapter-3}
+# 3 Why Microservices? {#chapter-3}
 
 There is more than one reason to use Microservices. Depending on the
 context the architectural designs can look completely
@@ -6,7 +6,7 @@ differently. Therefore, it is not only important to know the
 advantages, but also to judge their relevance for a concrete project
 and to implement a fitting architecture.
 
-##3.1 Scaling Agility {#section3-1}
+## 3.1 Scaling Agility {#section3-1}
 
 As mentioned in [section 2.3](#section2-3), Microservices can affect the
 organization. Ideally each Microservice should be developed by one
@@ -34,7 +34,7 @@ Thereby Microservice-based architectures enable the independent
 development of individual Microservices and therefore facilitate the
 scaling of agile processes to larger project organizations.
 
-##3.2	Migrating Legacy Applications {#section3-2}
+## 3.2	Migrating Legacy Applications {#section3-2}
 
 Work with legacy code is often difficult: Systems grown over time are
 often badly structured so that it is difficult to get an
@@ -62,7 +62,7 @@ are so interesting. Replacing a legacy system by a multitude of
 Microservices is often a very useful approach to rapidly benefit in a
 system from advantages like Continuous Delivery.
 
-##3.3 Sustainable Development Speed {#section3-3}
+## 3.3 Sustainable Development Speed {#section3-3}
 
 Microservice-based architectures distribute a system into multiple
 independently deployable services. The distribution of a system into
@@ -106,7 +106,7 @@ architecture rules e.g. [Structure101](http://structure101.com/) or
 in the case of Microservices such measures are already integrated into
 the system.
 
-####Replaceability
+#### Replaceability
 
 Another important characteristic of Microservices is their
 replaceability: Without much effort a Microservice can be replaced by
@@ -115,7 +115,7 @@ When a system cannot be maintained anymore, it is often also
 impossible to rewrite it as the expenditure would just be too
 large. However, to replace a Microservices is not very difficult.
 
-####Conclusion
+#### Conclusion
 
 Within a Microservice-based system it should also in the long run be
 easy to implement new features since a Microservice is small. If a
@@ -126,7 +126,7 @@ maintainability of the system can be ensured. In summary,
 Microservice-based systems promise a lasting good maintainability and
 changeability of the software system.
 
-##3.4 Robustness {#section3-4}
+## 3.4 Robustness {#section3-4}
 
 In a Microservice-based system there is a high robustness in regards
 to certain problems - in contrast to deployment monoliths: When a
@@ -156,7 +156,7 @@ have to be decided as part of the requirements of the system.
 Resilience allows to make a Microservice-based system very robust. The basis
 for this is the strict separation in processes or virtual machines.
 
-##3.5 Continuous Delivery {#section3-5}
+## 3.5 Continuous Delivery {#section3-5}
 
 [Continuous Delivery](http://continuous-delivery-book.com) is an approach where software is regularly
 brought into production. The basis for this is mainly a largely
@@ -216,7 +216,7 @@ deployment of Microservices. Nevertheless, the advantages in regards to
 Continuous Delivery are for many architects and developers an
 important reason to get interested in Microservices.
 
-##3.6 Independent Scalability {#section3-6}
+## 3.6 Independent Scalability {#section3-6}
 
 Each Microservice runs as an individual process, sometimes even in a
 separate virtual machine. This allows to scale just the concerned
@@ -233,7 +233,7 @@ less resources to deal with the problem than would be the case for a
 deployment monolith. This can also be a relevant reason for
 introducing Microservices.
 
-##3.7 Technology Freedom {#section3-7}
+## 3.7 Technology Freedom {#section3-7}
 
 In principle each Microservice can be implemented in a different
 technology. Of course, this renders the system overall more
@@ -262,7 +262,7 @@ much easier. This entails also other positive consequences: Developers
 are free to try out new technologies which generally increases
 motivation.
 
-##3.8 Conclusion {#section3-8}
+## 3.8 Conclusion {#section3-8}
 
 Microservices have a large number of advantages. Which advantages are
 in the end the most important, depends on the concrete context. For

@@ -1,4 +1,4 @@
-#1 Introduction {#chapter-1}
+# 1 Introduction {#chapter-1}
 
 Microservices have turned into a hype. Like for every other architecture
 approach there are certain scenarios where the advantages of Microservices
